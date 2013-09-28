@@ -5,21 +5,20 @@
 <div class="incasing">
 
 <div class="topbar">
-
-<?php include (TEMPLATEPATH . '/searchform.php'); ?>
+<h1 class="pageHeader">Press</h1>
 </div>
 
-<div id="content">
-<ul class="press">
+<div id="content" class="press">
+<ul>
 <?php $args = array(
 	'post_type' => 'press'
 );
 $pressPosts = get_posts( $args );
 foreach ( $pressPosts as $post ) : setup_postdata( $post ); ?>
 	<li>
-		<?php print_custom_field('press_quote'); ?><br />
-		<?php print_custom_field('press_source'); ?><br />
-		<?php print_custom_field('press_link'); ?><br />
+		<h2 class="pressQuote">"<?php print_custom_field('press_quote'); ?>"</h2>
+		<h6 class="pressSource">-<?php print_custom_field('press_source'); ?></h6>
+		<a class="pressLink" href="<?php print_custom_field('press_link');?>">Full article</a>
 	</li>
 <?php endforeach; 
 wp_reset_postdata();?>

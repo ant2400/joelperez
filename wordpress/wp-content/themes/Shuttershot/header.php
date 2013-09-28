@@ -50,7 +50,7 @@ wp_enqueue_script('supersized', get_stylesheet_directory_uri() .'/js/supersized.
 					//Size & Position
 					min_width		        :   0,		//Min width allowed (in pixels)
 					min_height		        :   0,		//Min height allowed (in pixels)
-					vertical_center         :   1,		//Vertically center background
+					vertical_center         :   0,		//Vertically center background
 					horizontal_center       :   1,		//Horizontally center background
 					fit_portrait         	:   1,		//Portrait images will not exceed browser height
 					fit_landscape			:   0,		//Landscape images will not exceed browser width
