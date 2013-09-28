@@ -10,31 +10,20 @@
 </div>
 
 <div id="content">
-
-<?php if (have_posts()) : ?>
-<?php while (have_posts()) : the_post(); ?>
-
-<div class="post" id="post-<?php the_ID(); ?>">
-
-<div class="title">
-	<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
-</div>
-
-
-<div class="entry">
-<?php the_content('Read the rest of this entry &raquo;'); ?>
-<div class="clear"></div>
-
-</div>
-</div>
-
-<?php endwhile; else: ?>
-
-		<h1 class="title">Not Found</h1>
-		<p>I'm Sorry,  you are looking for something that is not here. Try a different search.</p>
-
-<?php endif; ?>
-
+<ul class="press">
+<?php $args = array(
+	'post_type' => 'press'
+);
+$pressPosts = get_posts( $args );
+foreach ( $pressPosts as $post ) : setup_postdata( $post ); ?>
+	<li>
+		<?php print_custom_field('press_quote'); ?><br />
+		<?php print_custom_field('press_source'); ?><br />
+		<?php print_custom_field('press_link'); ?><br />
+	</li>
+<?php endforeach; 
+wp_reset_postdata();?>
+</ul>
 </div>
 
 <!--?php get_sidebar(); ?>
