@@ -18,7 +18,7 @@ foreach ( $pressPosts as $post ) : setup_postdata( $post ); ?>
 	<li>
 		<h2 class="pressQuote">"<?php print_custom_field('press_quote'); ?>"</h2>
 		<h6 class="pressSource">-<?php print_custom_field('press_source'); ?></h6>
-		<a class="pressLink" href="<?php print_custom_field('press_link');?>">Full article</a>
+		<a class="pressLink" href="<?php print_custom_field('press_link');?>">View Full Article</a>
 	</li>
 <?php endforeach; 
 wp_reset_postdata();?>

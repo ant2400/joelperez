@@ -38,9 +38,8 @@ $wp_query->query('paged='.$paged);
 <?php
 if ( has_post_thumbnail() ) { ?>
 	<a href="<?php the_permalink() ?>"><img class="postimg" src="<?php bloginfo('stylesheet_directory'); ?>/timthumb.php?src=<?php get_image_url(); ?>&amp;h=200&amp;w=470&amp;zc=1" alt=""/></a>
-<?php } else { ?>
-	<a href="<?php the_permalink() ?>"><img class="postimg" src="<?php bloginfo('template_directory'); ?>/images/dummy.png" alt="" /></a>
-<?php } ?>
+<?php }  ?>
+		
 <?php the_excerpt(); ?>
 <div class="clear"></div>
 </div>

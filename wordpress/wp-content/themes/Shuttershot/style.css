@@ -187,8 +187,10 @@ html[xmlns] .clearfix {
 	}		
 .topbar{
 	height:50px;
-	background:#000;
-	position:relative;
+	background:rgba(0,0,0,0.7);
+	position:absolute;
+	width:100%;
+	top: -50px;
 }
 
 .subhead{
@@ -213,10 +215,11 @@ html[xmlns] .clearfix {
 }
 
 .incasing{
-	background:#fafafa;
+	background:rgba(255,255,255,0.7);
 	padding:0px 0px 20px 0px;
-	margin-top:50px;
-	margin-bottom:50px;	
+	margin-top:100px;
+	margin-bottom:50px;
+	position: relative;
 	width:800px;
 	float:left;
 	-moz-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -256,10 +259,19 @@ html[xmlns] .clearfix {
 	}
 
 h1.logo{
-	font-size:36px;
+	font-size:48px;
 	width:250px;
-
+	font-family:BebasNeueRegular,Arial, verdana,Century gothic, sans-serif;	
+	color: #fff;
+	line-height:80px
 	}
+h1.logo  a{
+	color:#fff;
+	padding-left: 25px;
+}
+h1.logo > a:hover{
+	color: #fff;
+}
 h1.logo img{
 	display:block;
 	margin-left:20px;
@@ -1298,3 +1310,40 @@ display:none;
 	text-shadow:2px 2px 5px #000;	
 	font-family:BebasNeueRegular,Arial, verdana,Century gothic, sans-serif;	
 }
+
+/*Global stuff added by Anthony*/
+h1.pageHeader {
+	font-family:BebasNeueRegular,Arial, verdana,Century gothic, sans-serif;
+	color: #fff;
+	line-height: 50px;
+	font-size: 2.5em;
+	margin-left: 25px;
+}
+
+/* PRESS PAGE STYLING */
+#content.press {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+#content.press  ul {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#content.press  ul li {
+	margin-bottom: 40px;
+}
+
+.pressQuote {
+	font-family: 'Roboto Slab', serif;
+	font-size: 36px;
+}
+
+.pressSource {
+	margin-top: 10px;
+	font-size: 15px;
+	font-weight: normal;
+}
+
