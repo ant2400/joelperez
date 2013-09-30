@@ -9,7 +9,7 @@
 <h1 class="pageHeader">Media</h1>
 </div>
 
-<div id="content">
+<div id="content" class="media">
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
 
@@ -21,6 +21,39 @@
 <div class="clear"></div>
 
 </div>
+
+	<div class="vid">
+		<p>On "The Big C"</p>
+		<iframe width="560" height="315" src="//www.youtube.com/embed/BhBA9vrslho" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<div class="vid">
+		<p>Singing "More Than Words"</p>
+		<iframe width="560" height="315" src="//www.youtube.com/embed/bOuYgsoaQog" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<div class="vid">
+		<p>The Harmonious Pimps of Harmony</p>
+		<iframe width="560" height="315" src="//www.youtube.com/embed/3RVhwcWBtsY" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<h2 class="sectionHeader">Commercial Work</h2>
+
+	<div class="vid">
+		<p>Nike Air Jordan</p>
+		<iframe width="560" height="315" src="//www.youtube.com/embed/BirIEDYrw0Y" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<div class="vid">
+		<p>Axe Anarchy V.O.</p>
+		<iframe width="560" height="315" src="//www.youtube.com/embed/yFN0AZl6sVI" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<div class="vid">
+		<p>Delloite Consulting</p>
+		<iframe width="420" height="315" src="//www.youtube.com/embed/b9ghb6-l7Fs" frameborder="0" allowfullscreen></iframe>
+	</div>
+
 </div>
 
 <?php endwhile; else: ?>

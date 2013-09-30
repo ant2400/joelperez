@@ -414,6 +414,41 @@ h1.logo img{
 	float:left;
 	}
 	
+/*added by Anthony*/
+#social {
+	float: right;
+	margin-right: 50px;
+	margin-top: 15px;
+	height: 40px;
+}
+
+#social .contactSocial {
+	margin-top: 12px;
+}
+
+#social li {
+	float: left;
+	margin-right: 10px;
+}
+
+#social li a.icon {
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+#social #fb {
+	background-image: url(images/facebook-sm.png);
+}
+#social #tw {
+	background-image: url(images/twitter-sm.png);
+}
+#social #imdb {
+	background-image: url(images/imdb-sm.png);
+}
+/*done added by Anthony*/
+	
+	
 #submenu {
 	margin: 0px 0px ;
 	/*width:700px;*/
@@ -1320,6 +1355,18 @@ h1.pageHeader {
 	margin-left: 25px;
 }
 
+.sectionHeader {
+	font-family: 'Roboto Slab', serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.clearFix {
+	clear: both;
+}
+
 /* PRESS PAGE STYLING */
 #content.press {
 	padding: 0;
@@ -1347,3 +1394,87 @@ h1.pageHeader {
 	font-weight: normal;
 }
 
+/* MEDIA PAGE STYLING */
+#content.media {
+	padding: 0 5%;
+	margin: 0;
+	width: 90%;
+}
+
+#content.media .sectionHeader {
+	margin-bottom: 20px;
+}
+
+#content.media .vid {
+	margin-bottom: 20px;
+}
+
+#content.media .vid p {
+	margin-bottom: 10px;
+}
+
+/* WORK PAGE STYLING */
+#content.work {
+	padding: 0 5%;
+	margin: 0;
+	width: 90%;
+}
+
+#content.work .sectionHeader {
+	margin: 20px 0;
+}
+
+/* CONTACT PAGE STYLING */
+#content.contact {
+	padding: 0 5%;
+	margin: 0;
+	width: 90%;
+}
+
+#content.contact .repInfo {
+	margin: 40px 0;
+}
+
+#content.contact .repInfo li {
+	margin-top: 20px;
+}
+
+#content.contact .repInfo li:last_child {
+	margin-bottom: 20px;
+}
+
+#content.contact .contactTitle {
+	font-family: 'Roboto Slab', serif;
+}
+
+#content.contact .contactSocial {
+	margin-top: 30px;
+}
+
+#content.contact .contactSocial li {
+	float: left;
+	margin-right: 20px;
+}
+
+#content.contact .contactSocial li a.icon{
+	display: block;
+	width: 32px;
+	height: 32px;
+	float: left;
+}
+
+#content.contact .contactSocial li p {
+	float: left;
+	line-height: 32px;
+	margin-left: 10px;
+}
+
+#content.contact .contactSocial li a.icon#fb{
+	background-image: url(images/facebook.png);
+}
+#content.contact .contactSocial li a.icon#tw{
+	background-image: url(images/twitter.png);
+}
+#content.contact .contactSocial li a.icon#imdb{
+	background-image: url(images/imdb.png);
+}

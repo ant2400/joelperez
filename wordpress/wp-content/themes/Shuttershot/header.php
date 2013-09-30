@@ -98,6 +98,20 @@ wp_reset_query();
 		<?php wp_nav_menu( array( 'container_id' => 'submenu', 'theme_location' => 'primary','menu_class'=>'sfmenu','fallback_cb'=> 'fallbackmenu' ) ); ?>
 	</div>
 	
+	<div id="social">
+		<ul class="contactSocial">
+			<li>
+				<a class="icon" id="imdb" href="http://www.imdb.com/name/nm3095128/?ref_=fn_al_nm_1"></a>
+			</li>
+			<li>
+				<a class="icon" id="fb" href="https://www.facebook.com/pages/Joel-Perez/169305409848590?ref=hl"></a>
+			</li>
+			<li>
+				<a class="icon" id="tw" href="https://twitter.com/MisterJoelPerez"></a>
+			</li>
+		</ul>
+	</div>
+	
 </div><!--end masthead-->
 
 
