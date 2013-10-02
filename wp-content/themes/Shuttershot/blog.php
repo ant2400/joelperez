@@ -11,7 +11,7 @@
 <div class="incasing">
 
 <div class="topbar">
-<?php include (TEMPLATEPATH . '/searchform.php'); ?>
+<h3 class="pageHeader">News</h3>
 </div>
 
 <div id="content">
