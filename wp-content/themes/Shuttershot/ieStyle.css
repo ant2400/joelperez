@@ -1,0 +1,15 @@
+#masthead {
+	background: url(images/blackOpacity2.png) 0 0 repeat;
+}
+
+#masthead:hover {
+	background: url(images/blackOpacity6.png) 0 0 repeat;
+}
+
+.topbar {
+	background: url(images/blackOpacity7.png) 0 0 repeat;
+}
+
+.incasing {
+	background: url(images/whiteOpacity7.png) 0 0 repeat;
+}

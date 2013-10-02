@@ -6,7 +6,11 @@
 <title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
- <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/supersized.css" media="screen" />	 
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/supersized.css" media="screen" />	
+
+<!--[if lte IE 8]>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/ieStyle.css" media="screen" />	
+<![endif]--> 
 
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
